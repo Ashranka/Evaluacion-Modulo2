@@ -1,10 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Amenzas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiberSeguridad - Amenazas Comunes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
+<!-- Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">🔒 CiberSeguridad</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Amenzas.html">Amenazas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Consejos.html">Consejos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<!-- Header -->
+<section class="page-header py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 mb-3">Amenazas Cibernéticas Comunes</h1>
+                <p class="lead">Conoce los principales tipos de ataques y cómo identificarlos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tarjetas de Amenazas -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Phishing -->
+            <div class="col-lg-6">
+                <div class="card threat-card h-100">
+                    <div class="card-body">
+                        <div class="threat-icon">🎣</div>
+                        <h3 class="card-title">Phishing</h3>
+                        <p class="card-text">Técnica que busca engañar a las personas para que revelen información confidencial haciéndose pasar por entidades legítimas.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#phishing-details">
+                            Ver detalles
+                        </button>
+                        <div class="collapse mt-3" id="phishing-details">
+                            <div class="alert alert-info">
+                                <strong>Ejemplo:</strong> Correos que simulan ser de tu banco pidiendo que actualices tu contraseña.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ransomware -->
+            <div class="col-lg-6">
+                <div class="card threat-card h-100">
+                    <div class="card-body">
+                        <div class="threat-icon">🔐</div>
+                        <h3 class="card-title">Ransomware</h3>
+                        <p class="card-text">Malware que cifra los archivos de la víctima y exige un rescate para restaurar el acceso a los datos.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#ransomware-details">
+                            Ver detalles
+                        </button>
+                        <div class="collapse mt-3" id="ransomware-details">
+                            <div class="alert alert-warning">
+                                <strong>Ejemplo:</strong> WannaCry afectó a miles de computadoras en 2017, cifrando archivos y pidiendo rescate.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Malware -->
+            <div class="col-lg-6">
+                <div class="card threat-card h-100">
+                    <div class="card-body">
+                        <div class="threat-icon">🦠</div>
+                        <h3 class="card-title">Malware</h3>
+                        <p class="card-text">Software malicioso diseñado para dañar, interrumpir o obtener acceso no autorizado a sistemas informáticos.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#malware-details">
+                            Ver detalles
+                        </button>
+                        <div class="collapse mt-3" id="malware-details">
+                            <div class="alert alert-danger">
+                                <strong>Ejemplo:</strong> Virus, troyanos, spyware que se instalan sin consentimiento.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DDoS -->
+            <div class="col-lg-6">
+                <div class="card threat-card h-100">
+                    <div class="card-body">
+                        <div class="threat-icon">💥</div>
+                        <h3 class="card-title">Ataques DDoS</h3>
+                        <p class="card-text">Intento de hacer que un servicio en línea no esté disponible abrumándolo con tráfico de múltiples fuentes.</p>
+                        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#ddos-details">
+                            Ver detalles
+                        </button>
+                        <div class="collapse mt-3" id="ddos-details">
+                            <div class="alert alert-secondary">
+                                <strong>Ejemplo:</strong> Múltiples computadoras enviando peticiones simultáneamente para saturar un servidor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
